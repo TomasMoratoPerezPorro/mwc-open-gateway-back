@@ -1,0 +1,5 @@
+### Get All festivals
+GET http://localhost:3000/festivals
+
+### Get User by ID
+GET http://localhost:3000/festivals/00000000-0000-0000-0000-000000000001

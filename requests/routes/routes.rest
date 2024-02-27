@@ -1,0 +1,8 @@
+### Get All routes
+GET http://localhost:3000/routes
+
+### Get filtered routes
+GET http://localhost:3000/routes?status_id=20000000-0000-0000-0000-000000000001
+
+### Get User by ID
+GET http://localhost:3000/routes/50000000-0000-0000-0000-000000000001

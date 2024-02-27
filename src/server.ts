@@ -4,6 +4,9 @@ import bodyParser from 'body-parser';
 import cors from 'cors';
 import usersRoutes from './routes/usersRoutes';
 import rolesRoutes from './routes/rolesRoutes';
+import festivalsRoutes from './routes/festivalsRoutes';
+import vehiclesRoutes from './routes/vehiclesRoutes';
+import routesRoutes from './routes/routesRoutes';
 // Import other routes
 
 const app = express();
@@ -15,6 +18,9 @@ app.use(bodyParser.json());
 // Use routes
 app.use('/users', usersRoutes);
 app.use('/roles', rolesRoutes);
+app.use('/festivals', festivalsRoutes);
+app.use('/vehicles', vehiclesRoutes);
+app.use('/routes', routesRoutes);
 // Setup other routes
 
 app.listen(PORT, () => {

@@ -1,0 +1,14 @@
+[
+  {
+    "festival_id": "00000000-0000-0000-0000-000000000001",
+    "festival_name": "Summer Fest"
+  },
+  {
+    "festival_id": "00000000-0000-0000-0000-000000000002",
+    "festival_name": "Winter Wonderland"
+  },
+  {
+    "festival_id": "00000000-0000-0000-0000-000000000003",
+    "festival_name": "Spring Fling"
+  }
+]

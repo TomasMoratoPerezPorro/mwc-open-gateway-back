@@ -1,0 +1,10 @@
+[
+  {
+    "vehicle_id": "40000000-0000-0000-0000-000000000001",
+    "registration_number": "ABC123",
+    "rental_company": "Rent-a-Car",
+    "main_driver_id": "30000000-0000-0000-0000-000000000001",
+    "brand": "Toyota",
+    "festival_id": "00000000-0000-0000-0000-000000000001"
+  }
+]
