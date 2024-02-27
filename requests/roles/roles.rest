@@ -1,0 +1,5 @@
+### Get All roles
+GET http://localhost:3000/roles
+
+### Get User by ID
+GET http://localhost:3000/roles/10000000-0000-0000-0000-000000000001

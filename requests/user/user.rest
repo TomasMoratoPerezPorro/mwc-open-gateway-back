@@ -1,0 +1,17 @@
+### Get All Users
+GET http://localhost:3000/users
+
+### Get User by ID
+GET http://localhost:3000/users/30000000-0000-0000-0000-000000000001
+
+### Create a New User
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "username": "newuser",
+  "email": "newuser@example.com",
+  "phone_number": "1234567890",
+  "role_id": 1,
+  "festival_id": 1
+}

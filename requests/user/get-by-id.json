@@ -1,0 +1,14 @@
+[
+    {
+      "user_id": "30000000-0000-0000-0000-000000000001",
+      "username": "john_doe",
+      "password_hash": "passwordhash1",
+      "email": "john@example.com",
+      "phone_number": "1234567890",
+      "role_id": "10000000-0000-0000-0000-000000000001",
+      "festival_id": "00000000-0000-0000-0000-000000000001",
+      "last_location_time": null,
+      "last_location_latitude": null,
+      "last_location_longitude": null
+    }
+  ]
