@@ -1,0 +1,6 @@
+### Get location
+GET http://localhost:3000/location/get?phone=21431000040
+
+
+### Get verification location
+GET http://localhost:3000/location/verify?phone=21431000040&lat=41.3576&lon=2.1222

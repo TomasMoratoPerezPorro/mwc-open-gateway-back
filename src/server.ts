@@ -7,6 +7,7 @@ import rolesRoutes from './routes/rolesRoutes';
 import festivalsRoutes from './routes/festivalsRoutes';
 import vehiclesRoutes from './routes/vehiclesRoutes';
 import routesRoutes from './routes/routesRoutes';
+import locationRoutes from './routes/locationRoutes';
 // Import other routes
 
 const app = express();
@@ -16,11 +17,13 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Use routes
+app.use('/location', locationRoutes);
 app.use('/users', usersRoutes);
 app.use('/roles', rolesRoutes);
 app.use('/festivals', festivalsRoutes);
 app.use('/vehicles', vehiclesRoutes);
 app.use('/routes', routesRoutes);
+
 // Setup other routes
 
 app.listen(PORT, () => {
