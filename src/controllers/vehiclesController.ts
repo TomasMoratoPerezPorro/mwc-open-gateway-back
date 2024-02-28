@@ -20,3 +20,13 @@ export const getVehicles = async (req: Request, res: Response) => {
     res.json(data);
   };
   
+  export const getVehicleByFestivalId = async (req: Request, res: Response) => {
+    const festId = req.params.festId;
+    const { data, error } = await supabase
+      .from('vehicles')
+      .select('*')
+      .eq('festival_id', festId);
+  
+    if (error) return res.status(400).json({ error: error.message });
+    res.json(data);
+  };

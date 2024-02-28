@@ -4,6 +4,9 @@ GET http://localhost:3000/users
 ### Get User by ID
 GET http://localhost:3000/users/30000000-0000-0000-0000-000000000001
 
+### Get User by role ID and festival ID
+GET http://localhost:3000/users/festival/10000000-0000-0000-0000-000000000001/00000000-0000-0000-0000-000000000001
+
 ### Create a New User
 POST http://localhost:3000/users
 Content-Type: application/json
