@@ -22,13 +22,23 @@ export const getVehicles = async (req: Request, res: Response) => {
   
   export const getVehicleByFestivalId = async (req: Request, res: Response) => {
     const festId = req.params.festId;
-    const { data, error } = await supabase
+    let { data, error } = await supabase
       .from('vehicles')
       .select('*')
       .eq('festival_id', festId)
 
-
-  
     if (error) return res.status(400).json({ error: error.message });
-    res.json(data);
+    let data2=data
+    let all=[]
+    for( let i in data2){
+      let { data, error } = await supabase
+      .from('users')
+      .select('*')
+      .eq('user_id', data2[i].main_driver_id)
+      data2[i].name=data[0].username
+      all.push(data2[i])
+    }
+
+
+    res.json(all);
   };
