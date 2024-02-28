@@ -1,5 +1,8 @@
 ### Get All vehicles
 GET http://localhost:3000/vehicles
 
-### Get User by ID
+### Get vehicle by ID
 GET http://localhost:3000/vehicles/40000000-0000-0000-0000-000000000001
+
+### Get vehicles by festival ID
+GET http://localhost:3000/vehicles/festival/00000000-0000-0000-0000-000000000001
