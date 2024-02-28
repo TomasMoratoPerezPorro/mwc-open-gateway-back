@@ -49,6 +49,7 @@ export const getRoutes = async (req: Request, res: Response) => {
   // Handle the response
   if (error) return res.status(400).json({ error: error.message });
 
+  //status name
   let data2=data
   let all=[]
   for (let i in data2){
@@ -59,8 +60,26 @@ export const getRoutes = async (req: Request, res: Response) => {
     data2[i].status_name=data[0].status_name
     all.push(data2[i])
   }
+  //vip name
+  for (let i in data2){
+    let { data, error } = await supabase
+    .from('users')
+    .select('*')
+    .eq('user_id', data2[i].vip_id);
+    data2[i].vip_name=data[0].username
+    all.push(data2[i])
+  }
+  //vip name
+  for (let i in data2){
+    let { data, error } = await supabase
+    .from('users')
+    .select('*')
+    .eq('user_id', data2[i].driver_id);
+    data2[i].driver_name=data[0].username
+    all.push(data2[i])
+  }
 
-  res.json(all);
+  res.json(data2);
 };
   
   export const getRouteById = async (req: Request, res: Response) => {
